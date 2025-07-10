@@ -21,8 +21,6 @@ body {
   scroll-behavior: smooth;
 }
 
-
-
 /* 3. NAVBAR */
 .navbar {
   background-color: #F8F9FA;
@@ -110,14 +108,7 @@ section h2 {
   position: relative;
 }
 
-section h2::after {
-  content: "";
-  display: block;
-  width: 60px;
-  height: 3px;
-  background: var(--primary-color);
-  margin: 20px auto 0;
-}
+
 
 /* 6. CARDS */
 
@@ -337,6 +328,16 @@ img.rounded-circle {
   margin: 0 auto;
 }
 
+/* 14. susc/ver */
+
+.brg-versusc{
+  background-image: url("media/fondo\ 3.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
 
 /* 14. Beneficios */
 
@@ -371,17 +372,6 @@ img.rounded-circle {
   position: relative;
 }
 
-.section-title::after {
-  content: "";
-  display: block;
-  width: 50px;
-  height: 3px;
-  background-color: #4DD4AC;
-  margin-top: 10px;
-  margin-left: 0;
-  border-radius: 2px;
-}
-
 .lead-custom {
   font-size: 1rem;
   color: #6610F2;
@@ -389,6 +379,188 @@ img.rounded-circle {
   margin-bottom: 20px;
 }
 
+
+/* 14. PLANES DE SUSCRIPCIÓN */
+
+/* Fondo decorativo */
+.pricing-section {
+  background: url('media/fondo\ 1.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width:100%;
+  
+}
+
+/* Tarjeta */
+.plan-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 30px 25px;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.155);
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.plan-card:hover {
+  transform: translateY(-8px);
+}
+
+/* Precio */
+.plan-card .price {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #6610F2;
+  margin: 15px 0;
+}
+
+
+/* Etiqueta "más elegido" */
+
+.ribbon {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.ribbon span {
+  position: absolute;
+  display: block;
+  width: 200px;
+  padding: 8px 0;
+  background-color: #6610F2;
+  color: white;
+  font-size: 0.75rem;
+  text-align: center;
+  font-weight: bold;
+  transform: rotate(45deg);
+  top: 25px;
+  right: -55px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+/* PREGUNTAS */
+
+.accordion-button {
+  font-weight: 600;
+  color: #2B1366;
+}
+
+.accordion-item {
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.03);
+}
+
+/* marcas */
+
+#clients img {
+  max-height: 80px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  transition: filter 0.3s;
+}
+
+#clients img:hover {
+  filter: grayscale(0%);
+}
+
+/*testimonios*/
+
+.testimonial-item {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.167);
+  transition: transform 0.3s ease;
+  height: 100%;
+}
+
+.testimonial-item:hover {
+  transform: translateY(-5px);
+}
+
+.testimonial-img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 15px 0;
+}
+
+.stars {
+  color: #ffc107;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+
+.plan-img {
+  width: 120px;
+  height: auto;
+  display: block;
+}
+
+/*sUSCRIPCIONES 2 */
+
+.plan-img {
+  width: 120px;
+  height: auto;
+  display: block;
+}
+
+brg-planes2{ 
+   background-image: url("media/fondo\ 2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+/*contacto*/
+
+.contact-card {
+  border: 2px solid #6610F2;
+  border-radius: 16px;
+  background-color: #fff;
+}
+
+.contact-img {
+  width: 300px;
+  height: auto;
+}
+
+.contact-form {
+  border: 2px solid #6610F2;
+  border-radius: 16px;
+  background-color: #fff;
+}
+
+.contact-form .form-control {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.btn-submit {
+  background-color: #4DD4AC;
+  color: #2B1366;
+  padding: 10px 30px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color: #6610F2;
+  color: #fff;
+}
 
 
 
@@ -467,7 +639,7 @@ img.rounded-circle {
 }
 
 .img-rounded {
-  border-radius: 8px;
+  border-radius: 0px;
   overflow: hidden;
 }
 
