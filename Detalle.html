@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuración básica del documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uva Club-Detalle</title>
+
+    <!-- Tipografía desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Framework CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+<!-- NAVBAR: Menú de navegación fijo superior -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <!-- Logo o nombre del sitio -->
+    <a class="navbar-brand" href="#"> 
+      <img class="logo" src="media/logo.png" alt=""> 
+    </a>
+    <!-- Botón para mostrar menú en mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Ítems del menú -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Tienda</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Catas</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Suscripciones</a></li>
+        <li class="nav-item"><a href="#" class="btn">Iniciar Sesión</a>
+      </li>
+
+      </ul>
+    </div>
+   
+  </div>
+</nav>
+
+<!-- HERO: Sección de portada con llamado a la acción -->
+
+<section class="d-flex align-items-center bgrhero-detalle"  style="padding-top: 100px;">
+  <div class="container">
+    <div class="row gx-0 align-items-center text-center">
+      <!-- Texto principal -->
+      <div class="col-lg-6">
+        <h1 class="h1-custom">UN POCO DE TODO</h1>
+        <p class="lead-custom">
+          Una selección balanceada para quienes disfrutan probar sin encasillarse. El plan ideal para curiosear.
+        </p>
+         <a href="Detalle.html" class="btn btn-dark">Suscribirse</a>
+      <div class="d-flex gap-3 mt-4"></div>
+      </div>
+      <!-- Imagen destacada -->
+      <div class="col-lg-6 text-center">
+        <img src="media/imagenes improtantes/hero-detalle.png" class="img-fluid " alt="Imagen Hero">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- tipos de vinos -->
+<section class="section-spacing text-center bgrvinos">
+  <div class=" container">
+  <h2> Nuestra seleccion de Vinos</h2>
+  <p class="p-custom"></p>
+  <div class="row align-items-center">
+    <!-- Cada columna es un integrante -->
+    <div class="col-md-4 mb-4">
+      <img src="media/imagenes improtantes/torrente.png" class="img-vinos mx-auto d-block mb-3" alt="Miembro 1">
+      <h3>Torrontés</h3>
+      <p class="p-custom">Un blanco que baila entre flores y frutas. Ligero, perfumado y con alma fresca. </p>
+    </div>
+    <!-- Cada columna es un integrante -->
+    <div class="col-md-4 mb-4">
+      <img src="media/imagenes improtantes/malbec.png" class="img-vinos mx-auto d-block mb-3" alt="Miembro 1">
+      <h3>Malbec</h3>
+      <p class="p-custom">El clásico rebelde. Intenso, aterciopelado, con notas de ciruela y un dejo ahumado</p>
+    </div>
+    <!-- Cada columna es un integrante -->
+    <div class="col-md-4 mb-4">
+      <img src="media/imagenes improtantes/Cabernet.png"  class="img-vinos mx-auto d-block mb-3" alt="Miembro 1">
+      <h3>Cabernet</h3>
+      <p class="p-custom">Elegancia con carácter. Seco, especiado, con cuerpo y misterio.</p>  
+     </div>
+  </div>
+  </div>
+</section>
+
+<!-- Ademas -->
+
+<section class="section-spacing text-center">
+  <div class=" container">
+  <h2>Tambien podras encontrar...</h2>
+  <p class="p-custom"></p>
+  <div class="row align-items-center">
+    <!-- Cada columna es un integrante -->
+    <div class="col-md-4 mb-4">
+      <img src="media/imagenes improtantes/torrente.png" class="img-vinos mx-auto d-block mb-3" alt="Miembro 1">
+      <h3>Maridajes de</br>primera calidad </h3>
+      <p class="p-custom"> Aprendé con expertos.</br> Escaneá y descubrí tips de</br> sommeliers en video. </p>
+    </div>
+    <!-- Cada columna es un integrante -->
+    <div class="col-md-4 mb-4">
+      <img src="media/imagenes improtantes/malbec.png" class="img-vinos mx-auto d-block mb-3" alt="Miembro 1">
+      <h3>Fichas de</br>Catas sensoriales</h3>
+      <p class="p-custom">Explorá tus sentidos.</br> Guías simples para entender aromas, sabores y texturas.</p>
+    </div>
+    <!-- Cada columna es un integrante -->
+    <div class="col-md-4 mb-4">
+      <img src="media/imagenes improtantes/Cabernet.png"  class="img-vinos mx-auto d-block mb-3" alt="Miembro 1">
+      <h3>Qr a videos</br>de profecionales</h3>
+      <p class="p-custom">Aprendé con expertos.</br> Escaneá y descubrí tips</br> de sommeliers en video</p>  
+     </div>
+  </div>
+  </div>
+</section>
+
+<!-- wineswap  -->
+
+<section class="section-spacing text-center">
+  <div class="container">
+  <div class="row align-items-center">
+    <!-- Columna de imagen -->
+    <div class="col-lg-6 text-center mb-4 mb-lg-0">
+      <img src="media/imagenes improtantes/sommeliers.png" class="img-fluid" alt="Imagen ilustrativa">
+    </div>
+    <!-- Columna de texto -->
+    <div class="col-lg-6">
+      <h2 >Wineswap</h2>
+      <p class="lead-custom">Intercambiá vinos, momentos y miradas.</p><p> Wineswap es una forma de compartir los vinos de tu caja con otros suscriptores. Tenés hasta dos meses para hacerlo: elegís la botella, coordinás el encuentro y crean juntos una nueva experiencia.</p>
+    </div>
+  </div>
+  </div>
+</section>
+
+<!-- descuento -->
+<section class="section-spacing descuentobgr">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Texto a la izquierda -->
+      <div class="col-md-6 text-center mb-4 mb-md-0">
+        <h2>10% de Descuento</h2>
+        <p class="lead-custom">Incluye un cupón exclusivo del 10% para comprar en vinotecas asociadas. Más vino, menos excusas.</p>
+        <a href="#" class="btn btn-dark">Explorar</a>
+      </div>
+      <!-- Imagen a la derecha -->
+      <div class="col-lg-6 text-center">
+        <img src="media/imagenes improtantes/descuento.png" class="img-fluid img-descuento mx-auto d-block" alt="Imagen">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="w-100 overflow-hidden">
+        <img class="img-fluid w-100 d-block" alt="" src="media/fondos/seccion-6.png">
+</section>
+
+<!-- PRICING: Tabla de precios o planes -->
+
+<section class="section-spacing brg-planes2 text-center">
+  <div class="container">
+    <h2 class="h2-2 mb-3">Tal vez quieras ver más sobre...</h2>
+    <p class="h2-2 mb-5">Nuestra selección curada especialmente para vos y tu disfrute</p>
+    <div class="row justify-content-center">
+      <!-- Plan 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card p-4 h-100 text-center">
+          <img src="media/cajas/gustos verdatilesCaja.png" class="plan-img mx-auto mb-3" alt="Plan 1">
+          <h4 class="text-violeta">Para Gustos Versátiles</h4>
+          <h5 class="text-violeta">45.000$/mes</h5>
+          <p class="card-text">Delicadeza y frescura en cada sorbo. Para quienes hacen del aperitivo un ritual, y del brindis, una caricia</p>
+          <a href="#" class="btn btn-dark">Ver más</a>
+        </div>
+      </div>
+      
+      <!-- Plan 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card p-4 h-100 text-center">
+          <img src="media/cajas/fan de lo dulceCaja.png" class="plan-img mx-auto mb-3" alt="Plan 1">
+          <h4 class="text-violeta">Fan de lo Dulce</h4>
+          <h5 class="text-violeta">50.000$/mes</h5>
+          <p class="card-text">Para los que no pueden resistirse a una copa suave. Que hacen del postre un momento inolvidable.</p>
+          <a href="#" class="btn btn-dark">Ver másn</a>
+        </div>
+      </div>
+
+      <!-- Plan 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card p-4 h-100 text-center">
+          <img src="media/cajas/Los MisteriososCaja.png" class="plan-img mx-auto mb-3" alt="Plan 3">
+          <h4 class="text-violeta">Para Los Misteriosos</h4>
+          <h5 class="text-violeta">65.000$/mes</h5>
+          <p class="card-text">Explorá etiquetas que esconden secretos. Vinos intensos, complejos y con carácter. Descubre algo nuevo</p>
+          <a href="#" class="btn btn-dark">Ver más</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Seccion degradado CAMBIAR) -->
+
+<section class="w-100 overflow-hidden">
+        <img class="img-fluid w-100 d-block" alt="" src="media/fondos/seccion-4.png">
+</section>
+
+<!-- TESTIMONIALS: Opiniones de clientes -->
+<section class="section-spacing container text-center">
+  <h2 class="h2-custom">Testimonios</h2>
+  <p class="p-custom">Comentarios reales de usuarios para generar confianza.</p>
+  <div class="row">
+    <!-- Cada columna es un testimonio -->
+    <div class="col-md-4">
+    <div class="service-card green">
+      <blockquote class="blockquote p-4">
+        “Lo que más valoro es la variedad. Me sacaron de la zona Malbec y me llevaron por caminos que nunca me imaginé”
+        <footer class="blockquote-footer mt-3">Cliente 1</footer>
+      </blockquote>
+    </div>
+    </div>
+    <!-- Cada columna es un testimonio -->
+    <div class="col-md-4">
+    <div class="service-card green">
+      <blockquote class="blockquote p-4">
+        “Lo que más valoro es la variedad. Me sacaron de la zona Malbec y me llevaron por caminos que nunca me imaginé”
+        <footer class="blockquote-footer mt-3">Cliente 1</footer>
+      </blockquote>
+    </div>
+    </div>
+    <!-- Cada columna es un testimonio -->
+    <div class="col-md-4">
+    <div class="service-card green">
+      <blockquote class="blockquote p-4">
+        “Lo que más valoro es la variedad. Me sacaron de la zona Malbec y me llevaron por caminos que nunca me imaginé”
+        <footer class="blockquote-footer mt-3">Cliente 1</footer>
+      </blockquote>
+    </div>
+  </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="section-spacing text-center">
+  <div class="container">
+    <h2 class="h2-custom">Contáctanos</h2>
+    <div class="row mt-5 gy-4 justify-content-center">
+      <!-- Email -->
+      <div class="col-md-4">
+        <div class="contact-card p-4 h-100">
+          <img src="media/iconos/email .png" class="contact-img mb-3 img-fluid" alt="Email">
+          <h5 class="fw-bold">Nuestro Email</h5>
+          <p>info@correo.com<br>contacto@prueba.com</p>
+        </div>
+      </div>
+
+      <!-- Teléfono -->
+      <div class="col-md-4">
+        <div class="contact-card p-4 h-100">
+          <img src="media/iconos/telefono.png" class="contact-img mb-3 img-fluid" alt="Teléfono">
+          <h5 class="fw-bold">Llámanos</h5>
+          <p>+1 5589 55488 55<br>+1 6678 254445 41</p>
+        </div>
+      </div>
+
+      <!-- Formulario -->
+      <div class="col-md-8 mt-4">
+        <form action="#" method="post" class="contact-form p-4">
+          <div class="row g-3">
+            <div class="col-md-6">
+              <input type="text" class="form-control" placeholder="Tu Nombre" required>
+            </div>
+            <div class="col-md-6">
+              <input type="email" class="form-control" placeholder="Tu Email" required>
+            </div>
+            <div class="col-12">
+              <input type="text" class="form-control" placeholder="Asunto" required>
+            </div>
+            <div class="col-12">
+              <textarea class="form-control" rows="4" placeholder="Mensaje" required></textarea>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-submit">Enviar</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer-custom">
+
+  <!-- Newsletter Section -->
+  <div class="newsletter-area">
+    <h2>Entérate de nuestros<br><span>descuentos y nuevas adquisiciones</span></h2>
+    <p>Déjanos tu mail para recibir novedades <br>sobre el nuestro mundo</p>
+    <form class="newsletter-form">
+      <input type="email" placeholder="Ingresá tu correo">
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+
+  <!-- Footer Bottom -->
+  <div class="footer-bottom container-custom">
+    <div class="container" >
+      <div class="row gy-4 py-4">
+        <div class="col-md-3">
+          <img src="media/logo2.png" class="img-fluid" alt="Logo UVA Club" style="max-width: 120px;">
+        </div>
+
+        <div class="col-md-3">
+          <h5>Useful Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Terms of service</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <h5>Our Services</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">Product Management</a></li>
+            <li><a href="#">Marketing</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <h5>Follow Us</h5>
+          <p>Crass fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+          <div class="social-icons">
+            <a href="#"><i class="bi bi-twitter-x"></i></a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center py-3">
+        <p class="m-0">© Copyright <strong>UVA Club</strong>. All Rights Reserved</p>
+      </div>
+      </div>
+  </div>
+</footer>
+
+<!-- Bootstrap Bundle JS (incluye Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+<!-- Script personalizado para cambiar el navbar al hacer scroll -->
+<script>
+window.addEventListener('scroll', function() {
+  const navbar = document.querySelector('.navbar');
+  navbar.classList.toggle('scrolled', window.scrollY > 50);
+});
+</script>
+
+<!-- Scripts adicionales -->
+<script src="scripts.js"></script>
+</body>
+</html>

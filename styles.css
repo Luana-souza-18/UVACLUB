@@ -1,0 +1,922 @@
+
+
+/* 1. VARIABLES DE DISEÑO */
+:root {
+  --primary-color: #4DD4AC;
+  --secondary-color: #2B1366;
+  --light-color: #F8F9FA;
+  --dark-color: #6610F2;
+  --font-primary:'Exo 2', sans-serif; 
+  --font-secondary: 'Poppins', sans-serif;
+}
+
+
+/* 2. ESTILOS GENERALES */
+body {
+  font-family: var(--font-primary);
+  color: #6610F2;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding-top: 80px;
+  scroll-behavior: smooth;
+}
+
+/* 3. NAVBAR */
+.navbar {
+  background-color: #F8F9FA;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  padding: 10px 0;
+}
+
+.navbar.scrolled {
+  background-color: #fff;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-brand {
+  font-weight: 600;
+  font-size: 1.7rem;
+}
+
+.nav-link {
+  color: #6610F2 ;
+  font-weight: 500;
+  margin-left: 20px;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #4DD4AC;
+}
+
+.logo {
+  width: 80%;
+}
+
+
+/* 4. HERO */
+
+.bgrhero {
+  background-image: url("media/fondos/hero-1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.hero-img {
+  max-width: 115%;
+  height: auto;
+}
+
+.col-lg-6.text-center {
+  overflow: visible;
+}
+
+.row.p-5 {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  padding-top: 100px;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: var(--font-primary);
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+h1 {
+  font-family: var(--font-primary);
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: var(--dark-color);
+}
+
+p {
+  font-family: var(--font-secondary);
+  font-size: 1rem;
+  color: #212529;
+}
+
+.h2-2 {
+  color: #ffc107;
+}
+
+
+
+/* 5. SECCIONES */
+
+section {
+  padding: 0px 0;
+}
+
+section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+
+
+/* 6. CARDS */
+
+.card {
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--dark-color);
+}
+
+.masonry__container {
+  column-count: 4;
+  column-gap: 1rem;
+}
+
+.masonry__item {
+  width: 100%;
+  display: block;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+
+.card-text {
+  color: #6c757d;
+}
+
+/* 7. TESTIMONIOS */
+.blockquote {
+  background-color: var(--light-color);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* 8. FORMULARIO */
+form .form-control {
+  border-radius: 8px;
+  border: 1px solid #ced4da;
+}
+
+form button.btn-primary {
+  background-color: var(--primary-color);
+  border: none;
+  width: 100%;
+  border-radius: 50px;
+  margin-top: 20px;
+}
+
+/* 9. FOOTER */
+footer {
+  background-color: var(--dark-color);
+  color: #ffffff;
+  font-size: 0.9rem;
+}
+
+/* 10. IMÁGENES */
+img.rounded-circle {
+  border: 5px solid var(--light-color);
+}
+
+/* 11. GALERÍA */
+.container .row img {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.container .row img:hover {
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0);
+}
+
+
+/* 12.Botones */
+
+.btn {
+  border-radius:15px; 
+  background-color: #4DD4AC;
+  color: #2B1366;
+  padding: 10px 50px;
+  font-weight: 700;
+  font-family: var(--font-secondary);
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-dark {
+  background-color: #4DD4AC;
+  color: #2B1366;
+  border: none;
+}
+
+.btn-dark:hover {
+  background-color: #6610F2;
+  color: #fff;
+}
+
+.btn-outline-dark {
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.btn-outline-dark:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+/*  QUIENES SOMOS?*/
+
+.about .content {
+  background-color: rgba(91, 44, 111, 0.05); /* violeta suave */
+  padding: 20px 30px;
+  max-width: 100%;
+}
+
+.about-title {
+  color: #6610F2; /* Violeta UVA */
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.about-subtitle {
+  font-weight: 600;
+  font-size: 16px;
+  color: #6610F2;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.about .content p {
+  font-size: 15px;
+  color: #212529;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.img-somos{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 13. SECCION NUESTROS SERVICIOS */
+
+.servicios-bgr {
+  background-image: url('media/fondos/Servicios.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+
+.services-modern > .container {
+  position: relative;
+  z-index: 1;
+}
+
+
+.service-card {
+  background: #fff;
+  color: #000;
+  border-radius: 20px;
+  padding: 30px 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.3s ease;
+  height: 100%;
+  position: relative;
+}
+
+.service-card.yellow {
+  border: 4px solid #ffc107;
+}
+
+.service-card.green {
+  border: 4px solid #00cba9;
+}
+
+.service-card h3 {
+  font-size: 1.4rem;
+  margin: 20px 0 10px;
+  font-weight: bold;
+}
+
+.service-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.service-image img {
+  width: 60px;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* 14. susc/ver */
+
+.brg-versusc{
+  background-image: url("media/fondos/frase.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  display: block;
+}
+
+
+/* 14. Beneficios */
+
+.feature-box {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: all 0.3s ease-in-out;
+}
+
+.feature-box img {
+  width: 50px;
+  height: auto;
+}
+
+.feature-box h3 {
+  font-size: 0.95rem;
+  margin: 0;
+  font-weight: 600;
+  color: #2B1366;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #6610F2;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.lead-custom {
+  font-size: 1rem;
+  color: #6610F2;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+
+/* 14. PLANES DE SUSCRIPCIÓN */
+
+/* Fondo decorativo */
+.precio-bgr {
+  background-image: url("media/fondos/precios.png ");
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  width:100%;
+
+}
+
+/* Tarjeta */
+.plan-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 30px 25px;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.155);
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.plan-card:hover {
+  transform: translateY(-8px);
+}
+
+/* Precio */
+.plan-card .price {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #6610F2;
+  margin: 15px 0;
+}
+
+
+/* Etiqueta "más elegido" */
+
+.ribbon {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.ribbon span {
+  position: absolute;
+  display: block;
+  width: 200px;
+  padding: 8px 0;
+  background-color: #6610F2;
+  color: white;
+  font-size: 0.75rem;
+  text-align: center;
+  font-weight: bold;
+  transform: rotate(45deg);
+  top: 25px;
+  right: -55px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+/* PREGUNTAS */
+
+.accordion-button:not(.collapsed) {
+  background-color: #e9f0ff;
+  color: #2B1366;
+  font-weight: bold;
+}
+
+.accordion-button.collapsed {
+  background-color: #f9fbff;
+  color: #2B1366;
+}
+
+.accordion-item {
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+  overflow: hidden;
+}
+
+/*galeria*/
+
+.galeria-bgr{ 
+  background: url('media/fondos/galeria.png ');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width:100%;
+} 
+
+/* marcas */
+
+#clients img {
+  max-height: 80px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  transition: filter 0.3s;
+}
+
+#clients img:hover {
+  filter: grayscale(0%);
+}
+
+/*testimonios*/
+
+.testimonios-bgr{ 
+  background: url('media/fondos/testimonios.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width:100%;
+} 
+
+.testimonial-item {
+  background-color: #f8f9fa;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.167);
+  transition: transform 0.3s ease;
+  height: 100%;
+}
+
+.testimonial-item:hover {
+  transform: translateY(-5px);
+}
+
+.testimonial-img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 15px 0;
+}
+
+.stars {
+  color: #ffc107;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+
+.plan-img {
+  width: 120px;
+  height: auto;
+  display: block;
+}
+
+/*sUSCRIPCIONES 2 */
+
+.text-violeta {
+  color: #6610F2;
+}
+
+.plan-img {
+  width: 160px;
+  height: auto;
+  display: block;
+}
+
+.brg-planes2{ 
+  background-image: url("media/fondos/precios-2.png");
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.plan-card-2 {
+  background: #fff;
+  border-radius: 20px;
+  padding: 40px 20px;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.155);
+  position: relative;
+  transition: transform 0.3s ease;
+  margin: 0 15px 30px 15px;
+
+}
+
+.plan-card-2:hover {
+  transform: translateY(-8px);
+}
+
+/*contacto*/
+
+.contact-card {
+  border: 2px solid #6610F2;
+  border-radius: 16px;
+  background-color: #fff;
+}
+
+.contact-img {
+  width: 300px;
+  height: auto;
+}
+
+.contact-form {
+  border: 2px solid #6610F2;
+  border-radius: 16px;
+  background-color: #fff;
+}
+
+.contact-form .form-control {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.btn-submit {
+  background-color: #4DD4AC;
+  color: #2B1366;
+  padding: 10px 30px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color: #6610F2;
+  color: #fff;
+}
+
+
+/* FOOTER PERSONALIZADO */
+.footer-custom {
+  background-color: #fff;
+  color: #2B1366;
+  font-family: var(--font-secondary);
+}
+
+.newsletter-area {
+  background-color: #ffc107;
+  color: #2B1366;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.newsletter-area h2 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #2B1366;
+}
+
+.newsletter-area h2 span {
+  color: #6610F2;
+}
+
+.newsletter-area p {
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.newsletter-form {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.newsletter-form input[type="email"] {
+  padding: 10px 15px;
+  width: 300px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.newsletter-form button {
+  background-color: #6610F2;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.newsletter-form button:hover {
+  background-color: #4DD4AC;
+  color: #2B1366;
+}
+
+.footer-bottom {
+  background-color: #f8f9fa;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.footer-bottom h5 {
+  font-weight: 700;
+  color: #6610F2;
+}
+
+.footer-bottom a {
+  color: #2B1366;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+}
+
+.footer-bottom a:hover {
+  color: #4DD4AC;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 1.4rem;
+  color: #6610F2;
+}
+
+.social-icons a:hover {
+  color: #4DD4AC;
+}
+
+/*hero detalle*/
+
+.bgrhero-detalle{ 
+  background-image: url("media/fondos/hero-1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+/*Vinos*/
+
+.bgrvinos{ 
+  background-image: url("media/fondos/detalle.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.img-vinos {
+  width: 300px;
+  position: center;
+  height: auto;
+  display: block;
+}
+
+/*descuentos*/
+
+.descuentobgr {
+  background-image: url("media/fondos/descuento.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.img-descuento {
+  max-width: 113%;
+  height: auto;
+}
+
+/* ============================== */
+/* CUSTOM HELPER CLASSES */
+/* ============================== */
+
+/* ============================== */
+/* CUSTOM HELPER CLASSES */
+/* ============================== */
+
+/* TITULOS */
+.h1-custom {
+  font-family:var(--font-primary);
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--dark-color);
+}
+
+.h2-custom {
+  font-family:var(--font-primary);
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--dark-color);
+}
+
+.h3-custom {
+  font-family:var(--font-primary);
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--dark-color);
+}
+
+.h4-custom {
+  font-family:var(--font-primary);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--dark-color);
+}
+
+/* PÁRRAFOS Y TEXTOS */
+.p-custom {
+  font-family:var(--font-secondary);
+  font-size: 1rem;
+  color: #6610F2;
+  line-height: 1.6;
+}
+
+.lead-custom {
+  font-family:var(--font-secondary);
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #6610F2;
+}
+
+/* FONDOS E IMÁGENES */
+.bg-cover {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-overlay-light {
+  background-color: rgba(255,255,255,0.7);
+  backdrop-filter: blur(5px);
+}
+
+.bg-overlay-dark {
+  background-color: rgba(0,0,0,0.5);
+  backdrop-filter: blur(5px);
+  color: #fff;
+}
+
+.img-rounded {
+  border-radius: 0px;
+  overflow: hidden;
+}
+
+/* TEXTOS ADICIONALES */
+.text-uppercase-custom {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.text-muted-custom {
+  color: #6c757d;
+}
+
+/* ESPACIADOS */
+
+.section-spacing {
+   padding: 60px 60px;
+}
+
+.section-spacing-sm {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+
+/* ============================== */
+/* MEDIA QUERIES */
+/* ============================== */
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .masonry__container {
+    column-count: 3;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .masonry__container {
+    column-count: 2;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .masonry__container {
+    column-count: 1;
+  }
+  .hero-img {
+  max-width: 100%;
+  height: auto;
+  }
+  body {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  
+    .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    }
+
+    .about .content {
+    padding: 0px 0px;
+    }
+
+  .img-somos{
+  width: 200%;
+  height: auto;
+  
+}
+    .h1-custom {
+      font-family:var(--font-primary);
+      font-size: 2.2rem;
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--dark-color);
+    }
+   
+      .brg-planes2 .card {
+    width: 95% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  .brg-planes2 .plan-img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+}
+
+
+}
