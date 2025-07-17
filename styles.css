@@ -272,19 +272,12 @@ img.rounded-circle {
 /* 13. SECCION NUESTROS SERVICIOS */
 
 .servicios-bgr {
-  background-image: url('media/fondos/Servicios.png');
+  background-image: url('media/fondos/servicios.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
 }
-
-
-.services-modern > .container {
-  position: relative;
-  z-index: 1;
-}
-
 
 .service-card {
   background: #fff;
